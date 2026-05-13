@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Payment(models.Model):
+    encrypted_data = models.BinaryField()
+    created_at = models.DateTimeField(auto_now_add=True)
