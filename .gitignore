@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django sensitive data
+.env
+db.sqlite3
+db.sqlite3-journal
+
+# Logs
+*.log
+security.log
+
+# Virtual environments
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
