@@ -10,9 +10,9 @@ from .models import Payment
 # Part D: Setup Logger
 logger = logging.getLogger(__name__) 
 
-# Part C: Rate Limiting (5 requests per minute, block=True) 
+# Part C: Rate Limiting (5 requests per minute, block=Falsec) 
 @csrf_exempt
-@ratelimit(key='ip', rate='5/m', block=True)
+@ratelimit(key='ip', rate='5/m', block=False)
 def login_view(request):
 
     was_limited = getattr(request, 'limited', False)
